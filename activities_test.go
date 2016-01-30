@@ -812,6 +812,14 @@ func TestActivityType(t *testing.T) {
 		t.Errorf("activity type string incorrect, got %v", s)
 	}
 
+	if id := ActivityTypes.VirtualRide.Id(); id != 43 {
+		t.Errorf("activity type id incorrect, got %v", id)
+	}
+
+	if s := ActivityTypes.VirtualRide.String(); s != "VirtualRide" {
+		t.Errorf("activity type string incorrect, got %v", s)
+	}
+
 	// other
 	ty := ActivityType(100)
 	if id := ty.Id(); id != 0 {
