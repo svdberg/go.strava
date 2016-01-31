@@ -460,10 +460,6 @@ func (t ActivityType) Id() int {
 		return 40
 	case ActivityTypes.CrossCountrySkiing:
 		return 41
-	case ActivityTypes.EBikeRide:
-		return 42
-	case ActivityTypes.VirtualRide:
-		return 43
 	}
 
 	return 0
@@ -473,10 +469,6 @@ func (t ActivityType) String() string {
 	switch t {
 	case ActivityTypes.Ride:
 		return "Ride"
-	case ActivityTypes.VirtualRide:
-		return "VirtualRide"
-	case ActivityTypes.EBikeRide:
-		return "EBikeRide"
 	case ActivityTypes.AlpineSki:
 		return "Alpine Ski"
 	case ActivityTypes.BackcountrySki:
